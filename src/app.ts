@@ -15,7 +15,7 @@ app.use(morgan("dev"));
 app.use(express.json());
 
 app.use(cors({
-    origin: "http://localhost:5173", // or your frontend URL
+    origin: ['http://localhost:5173', 'https://gold-crowfunding-blockchain.netlify.app/'], // or your frontend URL
     credentials: true, // This is important for cookies/sessions
 }));
 
